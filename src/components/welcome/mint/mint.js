@@ -3,7 +3,7 @@ import "./mint.css";
 import { MintButton } from "./mintButton";
 import Timer from "./timer";
 function Mint() {
-  const [launchText, setLaunchText] = useState("Launch Day-30 Nov 2022");
+  // const [launchText, setLaunchText] = useState("Launch Day-30 Nov 2022");
 
   return (
     <>
@@ -12,10 +12,10 @@ function Mint() {
           src={require("./image1.gif?auto=compress")}
           className="mint-image"
         />
-        <h4>{launchText}</h4>
+        {/* <h4>{launchText}</h4>
         <br />
         <Timer setLaunchText={setLaunchText} />
-        <br />
+        <br /> */}
 
         <br />
         <h5 className="current-price-text">Current-Price=15MATIC</h5>
