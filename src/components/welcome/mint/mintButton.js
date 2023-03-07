@@ -30,7 +30,7 @@ export function MintButton() {
     const web3 = new Web3(provider);
     const account = web3.eth.getAccounts();
     account.then((result) => {
-      console.log(result[0]);
+//       console.log(result[0]);
       const balance = web3.eth.getChainId();
 
       balance.then((r) => {
@@ -47,14 +47,13 @@ export function MintButton() {
             // gas: 21000,
             data: contractInstance.methods.mint(1).encodeABI(),
           };
-          console.log("txTransfer" + txTransfer);
+          
           let approve = web3.eth.sendTransaction(txTransfer);
           approve
             .then((result) => {
-              console.log(result);
+             
               alert(
-                "Your transaction is successfull https://polygonscan.com/tx/" +
-                  result.transactionHash
+                "NFT Mint successful"
               );
             })
             .catch((e) => {
