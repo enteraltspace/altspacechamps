@@ -1,0 +1,61 @@
+.onramper-button {
+  background: linear-gradient(90.02deg, #3fff47 16.37%, #3fffd1 133.93%);
+  border-radius: 5px;
+  cursor: pointer;
+  border: 0px;
+  padding: 10px;
+  color: black;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15.2222px;
+  float: right;
+  margin-top: 1%;
+  margin-right: 2%;
+}
+.onramper-div {
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  position: fixed;
+  right: 20%;
+}
+.onramper-iframe {
+  --border-radius: 10px;
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2);
+  border-radius: var(--border-radius);
+  margin: auto;
+  max-width: 420px;
+}
+.popup-content {
+  margin: auto;
+  background: rgb(255, 255, 255);
+  width: 50%;
+  padding: 5px;
+}
+.popup-arrow {
+  color: rgb(255, 255, 255);
+}
+[role="tooltip"].popup-content {
+  width: 200px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 0px 3px;
+}
+
+.popup-overlay {
+  background: rgba(0, 0, 0, 0.5);
+}
+[data-popup="tooltip"].popup-overlay {
+  background: transparent;
+}
+@media screen and (max-width: 840px) {
+  .onramper-button {
+    float: none;
+    margin-right: 0;
+    margin-top: 2%;
+    margin-left: -10%;
+  }
+  .onramper-div {
+    right: 0;
+    width: 80%;
+  }
+}

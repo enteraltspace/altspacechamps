@@ -1,0 +1,45 @@
+.mint-container {
+  width: 80%;
+  height: auto;
+  margin-left: 10%;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.5) 0%,
+    rgba(168, 168, 168, 0) 100%
+  );
+  border: 3px solid;
+  border-image: linear-gradient(to right, #3fff47, #3ef7d2) 1;
+}
+.mint-image {
+  width: 146px;
+  margin: 6% 0%;
+  border-radius: 50%;
+}
+.value {
+  color: white;
+  display: inline-block;
+  padding: 5px;
+  font-size: 30px;
+  margin-left: 30%;
+  margin-right: 30%;
+}
+.mint-value {
+  width: 90%;
+  border-radius: 5px;
+  margin-top: 40px;
+}
+
+.current-price-text {
+  float: left;
+  margin-left: 7%;
+  font-size: calc(0.5rem + 1vw);
+}
+@media screen and (max-width: 840px) {
+  /* .current-price-text {
+    font-size: 2vw;
+  } */
+  .mint-container {
+    width: 90%;
+    margin-left: 5%;
+  }
+}

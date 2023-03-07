@@ -1,0 +1,25 @@
+.community-div1 {
+  width: 40%;
+  display: inline-block;
+  margin: 5%;
+  margin-top: 10%;
+}
+.community-img1 {
+  width: 100%;
+}
+.community-text {
+  font-size: 6vw;
+}
+.community-button {
+  background: linear-gradient(89.94deg, #3fff47 0.04%, #3fffd1 175.49%);
+  border-radius: 5px;
+  padding: 2%;
+  border: 0;
+  font-weight: bold;
+  color: black;
+}
+@media screen and (max-width: 840px) {
+  .community-div1 {
+    width: 90%;
+  }
+}
