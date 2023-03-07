@@ -1,6 +1,6 @@
 # Alt Space Champs
 
-ALT Space Champs collection is made up of 20,000 randomly generated NFTs that exist on the Polygon blockchain. The holders of ALT Space Champs NFTs can participate in an exclusive forum that brings together Web3 builders under 1 roof. Keep in mind that all Champs have caps, and that's what makes them different from everyone else in ALT Space.
+ALT Space Champs collection is made up of 9,999 randomly generated NFTs that exist on the Polygon blockchain. The holders of ALT Space Champs NFTs can participate in an exclusive forum that brings together Web3 builders under 1 roof. Keep in mind that all Champs have caps, and that's what makes them different from everyone else in ALT Space.
 
 ## Demo
 
