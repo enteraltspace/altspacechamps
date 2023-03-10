@@ -29,36 +29,41 @@ export function MintButton() {
     const provider = await web3Modal.connect();
     const web3 = new Web3(provider);
     const account = web3.eth.getAccounts();
+    const contractInstance = new web3.eth.Contract(abi, contractAddress);
+    const mintPrice = await contractInstance.methods.mintPrice().call();
     account.then((result) => {
-//       console.log(result[0]);
+      console.log(result[0]);
+
       const balance = web3.eth.getChainId();
 
       balance.then((r) => {
         if (r === 137) {
-          const contractInstance = new web3.eth.Contract(abi, contractAddress);
-          // const mintPrice = contractInstance.methods.mintPrice().call();
-          // console.log(mintPrice);
+          console.log(mintPrice);
           let txTransfer = {
             from: result[0],
             to: contractAddress,
-            maxPriorityFeePerGas: 40000000000,
+            //  gas: web3.utils.toHex(web3.utils.toWei( '.028' , 'gwei' )),
+            maxPriorityFeePerGas: 80000000000,
             maxFeePerGas: 250000000000,
-            value: 1 * 1 * 10e17,
-            // gas: 21000,
+            value: 1 * mintPrice,
+            // gas: 21000,1
             data: contractInstance.methods.mint(1).encodeABI(),
           };
-          
-          let approve = web3.eth.sendTransaction(txTransfer);
-          approve
-            .then((result) => {
-             
-              alert(
-                "NFT Mint successful"
-              );
+          web3.eth
+            .sendTransaction(txTransfer)
+            .on("transactionHash", function (hash) {
+              if (
+                window.confirm(
+                  "NFT mint Sucessful. Click, Ok to view the transaction"
+                )
+              ) {
+                window.open(`https://polygonscan.com/tx/${hash}`, "_blank");
+              }
+
+              // alert(`NFT Mint Successful https://polygonscan.com/tx/${hash}`);
             })
-            .catch((e) => {
-              console.error(e);
-              alert(e.message);
+            .on("error", function (error) {
+              alert(error.message);
             });
         } else {
           alert("Please connect to polygon chain");
