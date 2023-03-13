@@ -1,5 +1,66 @@
 .App {
   text-align: center;
+  background-image: url("./bkg.jpeg");
+  background-color: #111111;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: auto;
+  
+  /* Preserve aspet ratio */
+  min-width: 100%;
+  min-height: 100%;
   color: white;
-  background-image: url("/public/assets/bg.jpeg");
+  align-content: center;
+  font-family: Arial, sans-serif, 'Segoe UI Semilight';
+  font-size: 105%;
+  line-height: 2em;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+@font-face{
+  font-family: harmattan;
+  src: Arial, sans-serif, 'Segoe UI', Geneva, Verdana;
+}
+@font-face {
+  font-family: gos;
+  src: url(./gos.ttf);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
