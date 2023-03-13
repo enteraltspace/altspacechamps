@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import "./faq.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
@@ -8,12 +8,12 @@ function Faq() {
     const items = document.querySelectorAll(".accordion button");
     function toggleAccordion() {
       const itemToggle = this.getAttribute("aria-expanded");
-      console.log(itemToggle);
+
       for (var i = 0; i < items.length; i++) {
         items[i].setAttribute("aria-expanded", "false");
       }
 
-      if (itemToggle === "false") {
+      if (itemToggle == "false") {
         this.setAttribute("aria-expanded", "true");
       }
     }
@@ -23,15 +23,27 @@ function Faq() {
 
   return (
     <>
-      <h1 className="faq-heading" id="faq">
-        FAQ's
-      </h1>
+      <h2 className="faq-heading" id="faq">
+        FAQ
+      </h2>
       <details open>
-        <summary> What is ALT Space Champs NFT?</summary>
+        <summary> What are the benefits of Captains NFT?</summary>
         <div className="faq__content">
           <p>
-            It is 1 of unique 10,000 NFTs on the Polygon blockchain that will
-            have future utilities for Web3 Builders.
+            ⭐ GET VISIBILITY & PROMOTION - Get far and wide reach about your
+            Startup / project. <br />
+            Be featured in "Wall of Fame" Grid and "Elevator Reels" Board
+          </p>
+
+          <p>
+            ⭐ COLLABORATE & GROW - Be part of an exclusive community to
+            collaborate and find talent to work with. <br />
+            Interact at the exclusive token-gated community lounge.{" "}
+          </p>
+
+          <p>
+            ⭐ ACCESS VIRTUAL SUMMITS - Gain entry to virtual meetings and tech
+            summits.{" "}
           </p>
         </div>
       </details>
@@ -81,7 +93,8 @@ function Faq() {
           <p>
             The ALT Space is founded by Seshu along with its investor T.N.Rao.
             Dhanush and Gireesh are our young & dynamic souls taking charge of
-            design & development, while Sachin and Kiran handle the last mile.
+            design & development, while Anusha and Krishna handle the last mile
+            interaction.
           </p>
           <p>
             Seshu is an alumnus of University of Texas at Dallas, and Stanford
@@ -98,7 +111,6 @@ function Faq() {
             <a
               href="https://metamask.zendesk.com/hc/en-us/articles/4402538041869-Error-ethjs-query-while-formatting-outputs-from-RPC-transaction-underpriced-error-"
               target="_blank"
-              rel="noreferrer"
             >
               Follow this link
             </a>
