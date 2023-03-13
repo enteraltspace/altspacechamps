@@ -30,10 +30,6 @@
   font-family: harmattan;
   src: Arial, sans-serif, 'Segoe UI', Geneva, Verdana;
 }
-@font-face {
-  font-family: gos;
-  src: url(./gos.ttf);
-}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
