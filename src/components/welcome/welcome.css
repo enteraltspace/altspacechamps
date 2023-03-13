@@ -1,52 +1,40 @@
-.welcome-div1 {
-  text-align: left;
-  margin-top: 0%;
-  width: 60%;
-  margin: 5%;
-  display: inline-block;
+.welcome-div1{
+    text-align: left;
+    margin-top: 0%;
+    width: 60%;
+    margin: 5%;
+    display: inline-block;
 }
-.welcome-div2 {
-  width: 30%;
-  display: inline-block;
-  margin-top: 10%;
-  vertical-align: bottom;
+.welcome-div2{
+    width: 30%;
+    display: inline-block;
+    margin-top: 10%;
+    vertical-align: bottom;
 }
 
-.welcome-heading {
-  color: white;
-  font-size: 6vw;
+.welcome-heading{
+    color: white;
+    font-size: 6vw;
 }
-.welcome-heading1 {
-  font-size: 4vw;
-  text-transform: uppercase;
-  background: linear-gradient(to right, #3fff47 0%, #3fffd1 100%);
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+.welcome-heading1{
+    font-size: 4vw;
+    background: linear-gradient(to right, #3FFF47 0%, #3FFFD1 100%);
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
-.welcome-text {
-  color: white;
-  font-size: 20px;
-  line-height: 30px;
-  /* line-height: 15px; */
+.welcome-text{
+    color: white;   
 }
-@media screen and (max-width: 840px) {
-  .welcome-div2 {
-    width: 100%;
-    float: right;
-    margin: 0px;
-    margin-bottom: 20%;
-  }
-  .welcome-div1 {
-    width: 90%;
-    margin: 0%;
-  }
-  .welcome-div1 {
-    margin-top: 20%;
-  }
-  .welcome-text {
-    font-size: 20px;
-  }
-  .welcome-heading {
-    font-size: 8vw;
-  }
+@media screen and (max-width: 840px){
+    .welcome-div2{
+        width: 100%;
+        float: right;
+        margin: 0px;
+        margin-bottom: 20%;
+        
+    }.welcome-div1{
+        width: 90%;
+        margin: 0%;
+        margin-top: 20%;
+    }
 }
