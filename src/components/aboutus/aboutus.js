@@ -23,23 +23,8 @@ const About = () => {
       </div>
 
       <div className="part2">
-        <p>
-          The holders of ALT Space Champs NFTs can participate in an exclusive
-          forum that is designed to connect Web3 builders from all around the
-          globe. This is a great opportunity to network and collaborate with
-          others who are passionate about the same things that you are!
-        </p>
-
-        <p>
-          Whether you manage a Web3 product, a service startup, a blockchain
-          company, or a de-fi solution, you can grab our Champs NFT to engage
-          with similar players in the ALT Space.
-        </p>
-
-        <p>
-          Doing so will allow you to discuss commonalities and learn from one
-          another in order to continue driving the industry forward!
-        </p>
+      <p>The Champs are the ones who are interested to explore tech products and solutions. They are technology enthusiasts willing to experiment with Web3 as well.</p>
+      <p>The holders of ALT Space Champs NFTs become part of an exclusive token-gated community lounge. They enjoy the various benefits by being part of this tech community.</p>
       </div>
     </>
   );
