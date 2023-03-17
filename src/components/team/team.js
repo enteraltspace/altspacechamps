@@ -4,7 +4,7 @@ function Team(){
     return(<div className="team" id="team">
     <h2 className="team-heading">Meet our Team</h2>
     <span className="team-span">
-    <img src={require("./image1.png?auto=compress")} className="team-image"/>
+    <img src={require("./image7.png?auto=compress")} className="team-image"/>
     <span className="team-name">
         < h3 className="team-text">
         Seshu Karthick
@@ -15,7 +15,7 @@ function Team(){
     
     </span>
     <span className="team-span">
-    <img src={require("./image5.png?auto=compress")} className="team-image"/>
+    <img src={require("./image3.png?auto=compress")} className="team-image"/>
     <span className="team-name">
         <h3 className="team-text">
         T.N.Rao
@@ -24,7 +24,7 @@ function Team(){
     </span>
     </span>
     <span className="team-span">
-    <img src={require("./image3.png?auto=compress")} className="team-image"/>
+    <img src={require("./image5.png?auto=compress")} className="team-image"/>
     <span className="team-name">
         <h3 className="team-text">
         Gireesh
@@ -55,7 +55,7 @@ function Team(){
     </span>
 
     <span className="team-span">
-    <img src={require("./image7.png?auto=compress")} className="team-image"/>
+    <img src={require("./image1.png?auto=compress")} className="team-image"/>
     <span className="team-name">
         <h3 className="team-text">
         Krishna
