@@ -19,7 +19,6 @@
   color: white;
   display: inline-block;
   padding: 5px;
-  font-size: 30px;
   margin-left: 30%;
   margin-right: 30%;
 }
@@ -33,12 +32,8 @@
   float: left;
   margin-left: 7%;
   margin-top: 50px;
-  font-size: calc(0.5rem + 1vw);
 }
 @media screen and (max-width: 840px) {
-  /* .current-price-text {
-    font-size: 2vw;
-  } */
   .mint-container {
     width: 90%;
     margin-left: 5%;
