@@ -26,7 +26,6 @@
 
 .part2 {
   width: 40%;
-  font-size: 20px;
   margin-right: 10%;
   margin-left: 0;
   display: inline-block;
@@ -58,7 +57,6 @@
     width: 90%;
     text-align: left;
     margin: 5%;
-    font-size: 15px;
   }
   .about-heading {
     margin-top: 10%;
