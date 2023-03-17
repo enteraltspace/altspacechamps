@@ -30,20 +30,17 @@ function Faq() {
         <summary> What are the benefits of Captains NFT?</summary>
         <div className="faq__content">
           <p>
-            ⭐ GET VISIBILITY & PROMOTION - Get far and wide reach about your
-            Startup / project. <br />
-            Be featured in "Wall of Fame" Grid and "Elevator Reels" Board
+            ⭐ GET ACCESS - Get introduced to the current and upcoming Web3 products
+            from various companies across the world.
           </p>
 
           <p>
-            ⭐ COLLABORATE & GROW - Be part of an exclusive community to
-            collaborate and find talent to work with. <br />
-            Interact at the exclusive token-gated community lounge.{" "}
+            ⭐ NETWORK & INTERACT - Connect with Web3 project founders & developers.
           </p>
 
           <p>
             ⭐ ACCESS VIRTUAL SUMMITS - Gain entry to virtual meetings and tech
-            summits.{" "}
+            summits.
           </p>
         </div>
       </details>
