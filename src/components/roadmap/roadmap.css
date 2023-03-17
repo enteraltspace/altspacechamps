@@ -7,10 +7,9 @@
 }
 .rectangular-div {
   width: 100%;
-  height: 300px;
+  height: auto;
   border: 3px solid;
   text-align: left;
-  border: 3px solid;
   border-image: linear-gradient(to right, #3fff47, #3ef7d2) 1;
 }
 .main-div {
@@ -22,7 +21,6 @@
 }
 .roadmap-text {
   color: white;
-  padding: 5px;
   margin-left: 5%;
 }
 .circular-div {
