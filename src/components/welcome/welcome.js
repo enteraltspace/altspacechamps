@@ -5,7 +5,7 @@ function Welcome() {
   return (
     <>
       <div className="welcome-div1" id="home">
-        <h1 className="welcome-heading">Enter ALT Space </h1>
+        <h1 className="welcome-heading"><p>Enter ALT Space</p></h1>
         <h2 className="welcome-heading1"><p>as Champs</p></h2>
         <div className="welcome-text">
           <p>
