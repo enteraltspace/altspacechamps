@@ -10,7 +10,7 @@ function Community(){
         <img src={require("./tokenomics.png")} className="community-img1"/>
     </div>
     <div className="community-div1">
-        <img src={require("./community.png")} className="community-img1"/>
+        <img src={require("./Community.png")} className="community-img1"/>
     </div>
     </>)
 }
