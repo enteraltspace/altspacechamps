@@ -15,7 +15,7 @@ function Roadmap() {
           <p className="roadmap-text">✓ Website Development</p>
           <p className="roadmap-text">✓ Create NFT Collection</p>
           <p className="roadmap-text">✓ Private Sale Open</p>
-          <p className="roadmap-text">✓ Website to Mint NFTs</p>
+          <p className="roadmap-text">✓ Mint Page Creation</p>
         </div>
       </div>
       <div className="main-div">
