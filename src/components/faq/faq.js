@@ -45,11 +45,11 @@ function Faq() {
         </div>
       </details>
       <details>
-        <summary>What is the story or ALT Space?</summary>
+        <summary>What is the story of ALT Space?</summary>
         <div className="faq__content">
           <p>
             ALT Space is a parallel universe that has unique characters called
-            Captains, Champs, Cartoons and more. You can unlock characters by
+            Captains, Champs, Celebs and more. You can unlock characters by
             minting them, and start collaborating for your Web3 initiatives in
             multiple ways.
           </p>
