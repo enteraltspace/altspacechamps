@@ -27,7 +27,7 @@ function Roadmap() {
           <p className="roadmap-text"><strong>PHASE 2 - Q2 2023</strong></p>
           <p className="roadmap-text">Exclusive Portal for Collaboration</p>
           <p className="roadmap-text">Free Mint NFTs of New Collections</p>
-          <p className="roadmap-text"></p>
+          <p className="roadmap-text">Early invites & coupons to get NFTees</p>
         </div>
       </div>
       <div className="main-div">
@@ -37,9 +37,8 @@ function Roadmap() {
         <div className="rectangular-div">
           <p className="roadmap-text"><strong>PHASE 3 - Q3 2023</strong></p>
           <p className="roadmap-text">NFT Staking</p>
-          <p className="roadmap-text">NFT Passive incomes</p>
           <p className="roadmap-text">New Utilities for NFT holders</p>
-          <p className="roadmap-text">Interact in Metaverse</p>
+          <p className="roadmap-text">Interact in NFT Game / Metaverse</p>
         </div>
       </div>
     </>
