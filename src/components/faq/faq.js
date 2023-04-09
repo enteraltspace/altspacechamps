@@ -30,12 +30,12 @@ function Faq() {
         <summary> What are the benefits of Captains NFT?</summary>
         <div className="faq__content">
           <p>
-            ⭐ GET ACCESS - Get introduced to the current and upcoming Web3 products
-            from various companies across the world.
+            ⭐ ENTRY TO THE LOUNGE - Get exclusive access to the token-gated lounge to meet other cool tech enthusiasts.
           </p>
-
+    
           <p>
-            ⭐ NETWORK & INTERACT - Connect with Web3 project founders & developers.
+            ⭐ GET EARLY ACCESS - Get introduced to the current and upcoming Web3 products
+            from various companies across the world.
           </p>
 
           <p>
