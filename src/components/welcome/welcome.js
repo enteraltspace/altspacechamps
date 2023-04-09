@@ -16,8 +16,7 @@ function Welcome() {
 
           <p>
             Timeline: We are having our <strong>private sale</strong> now with
-            reduced pricing. The <strong>public launch</strong> will be on Mar
-            23, 2023.
+            reduced pricing.
           </p>
         </div>
         <br />
