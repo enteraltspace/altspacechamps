@@ -9,7 +9,7 @@ function Welcome() {
         <h2 className="welcome-heading1"><p>as Champs</p></h2>
         <div className="welcome-text">
           <p>
-            ALT Space Champs collection is made up of 9,999 randomly generated
+            ALT Champs collection is made up of 9,999 randomly generated
             NFTs that exist on the Polygon blockchain. The holders of Champs
             NFTs can participate in an exclusive token-gated lounge for tech and Web3 enthusiasts.
           </p>
