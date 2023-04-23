@@ -23,7 +23,7 @@ const About = () => {
       </div>
 
       <div className="part2">
-      <p>The Champs are the ones who are interested to explore tech products and solutions. They are technology enthusiasts willing to experiment with Web3 as well.</p>
+      <p>ALT Champs are those who love new tech, web3 and favor Global Unity. The champs strive in creating a world of people helping each other grow, nations collaborating for betterment, and human beings living in harmony with the nature.</p>
       <p>The holders of ALT Space Champs NFTs become part of an exclusive token-gated community lounge. They enjoy the various benefits by being part of this tech community.</p>
       </div>
     </>
