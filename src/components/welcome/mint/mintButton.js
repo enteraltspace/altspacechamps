@@ -62,55 +62,44 @@ export function MintButton() {
     const account = web3.eth.getAccounts();
     const contractInstance = new web3.eth.Contract(abi, contractAddress);
     const mintPrice = await contractInstance.methods.mintPrice().call();
-
+    console.log(account);
     account.then(async (result) => {
-      console.log(result[0]);
-      const isHolder = await contractInstance.methods
+      let isHolder = await contractInstance.methods
         .walletMints(result[0])
         .call();
-
+      console.log(isHolder);
       const balance = await web3.eth.getBalance(result[0]);
-      if (balance === 0) {
+      console.log(balance);
+      if (balance == 0) {
         alert("Inadequate funds in wallet.");
       }
 
-      if (isHolder === 0) {
-        chainConnected.then((r) => {
-          if (r === 137) {
-            console.log(mintPrice);
-            let txTransfer = {
-              from: result[0],
-              to: contractAddress,
-              //  gas: web3.utils.toHex(web3.utils.toWei( '.028' , 'gwei' )),
-              maxPriorityFeePerGas: 60000000000,
-              maxFeePerGas: 600000000000,
-              value: 1 * mintPrice,
-              gas: 264208,
-              data: contractInstance.methods.mint(1).encodeABI(),
-            };
+      if (isHolder == 0) {
+        console.log(mintPrice);
+        let txTransfer = {
+          from: result[0],
+          to: contractAddress,
+          //  gas: web3.utils.toHex(web3.utils.toWei( '.028' , 'gwei' )),
+          maxPriorityFeePerGas: 60000000000,
+          maxFeePerGas: 600000000000,
+          value: 1 * mintPrice,
+          gas: 264208,
+          data: contractInstance.methods.mint(1).encodeABI(),
+        };
 
-            web3.eth
-              .sendTransaction(txTransfer)
-              .on("receipt", function (receipt) {
-                if (
-                  window.confirm(
-                    "NFT mint Sucessful. Click, Ok to view the transaction"
-                  )
-                ) {
-                  window.open(
-                    `https://polygonscan.com/tx/${receipt.transactionHash}`,
-                    "_blank"
-                  );
-                }
-
-                // alert(`NFT Mint Successful https://polygonscan.com/tx/${hash}`);
-              })
-              .on("error", function (error) {
-                alert(error.message);
-              });
-          } else {
-            alert("Please connect to polygon chain");
+        web3.eth.sendTransaction(txTransfer).on("receipt", function (receipt) {
+          if (
+            window.confirm(
+              "NFT mint Sucessful. Click, Ok to view the transaction"
+            )
+          ) {
+            window.open(
+              `https://polygonscan.com/tx/${receipt.transactionHash}`,
+              "_blank"
+            );
           }
+
+          // alert(`NFT Mint Successful https://polygonscan.com/tx/${hash}`);
         });
       } else {
         alert("Only one mint per Wallet");
