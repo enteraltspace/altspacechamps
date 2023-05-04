@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./mint.css";
-import { MintButton } from "./mintButton";
-import Timer from "./timer";
+import { MintButton } from "./MintButton";
+
 function Mint() {
   // const [launchText, setLaunchText] = useState("Launch Day-30 Nov 2022");
 
@@ -18,7 +18,9 @@ function Mint() {
         <br /> */}
 
         <br />
-        <h5 className="current-price-text">Current Price = FREE / Negligible</h5>
+        <h5 className="current-price-text">
+          Current Price = FREE / Negligible
+        </h5>
         <MintButton />
       </div>
     </>

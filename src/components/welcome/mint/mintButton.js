@@ -3,6 +3,7 @@ import "./mintButton.css";
 import { abi, contractAddress } from "../constants.js";
 import Web3 from "web3";
 import Web3Modal from "web3modal";
+import { useState } from "react";
 
 const switchToPolygon = async () => {
   try {
@@ -31,7 +32,10 @@ const switchToPolygon = async () => {
   }
 };
 export function MintButton() {
+  const [isMinting, setIsMinting] = useState(false);
+  const [transactionReceipt, setTransactionReceipt] = useState(null);
   const MintNow = async () => {
+    setIsMinting(true);
     const WalletConnectProvider = window.WalletConnectProvider.default;
     let providerOptions = {
       walletconnect: {
@@ -45,7 +49,7 @@ export function MintButton() {
         },
       },
     };
-    console.log("function called");
+
     const web3Modal = new Web3Modal({
       network: "mainnet", // optional
       cacheProvider: true, // optional
@@ -72,6 +76,7 @@ export function MintButton() {
       console.log(balance);
       if (balance == 0) {
         alert("Inadequate funds in wallet.");
+        setIsMinting(false);
       }
 
       if (isHolder == 0) {
@@ -87,29 +92,43 @@ export function MintButton() {
           data: contractInstance.methods.mint(1).encodeABI(),
         };
 
-        web3.eth.sendTransaction(txTransfer).on("receipt", function (receipt) {
-          if (
-            window.confirm(
-              "NFT mint Sucessful. Click, Ok to view the transaction"
-            )
-          ) {
-            window.open(
-              `https://polygonscan.com/tx/${receipt.transactionHash}`,
-              "_blank"
-            );
-          }
+        web3.eth
+          .sendTransaction(txTransfer)
+          .on("receipt", function (receipt) {
+            if (
+              window.confirm(
+                "NFT mint Sucessful. Click, Ok to view the transaction"
+              )
+            ) {
+              window.open(
+                `https://polygonscan.com/tx/${receipt.transactionHash}`,
+                "_blank"
+              );
+            }
 
-          // alert(`NFT Mint Successful https://polygonscan.com/tx/${hash}`);
-        });
+            setTransactionReceipt(receipt);
+            setIsMinting(false);
+            // alert(`NFT Mint Successful https://polygonscan.com/tx/${hash}`);
+          })
+          .on("error", function (error, receipt) {
+            alert(error.message);
+            setTransactionReceipt(receipt);
+            setIsMinting(false);
+          });
       } else {
         alert("Only one mint per Wallet");
+        setIsMinting(false);
       }
     });
   };
   return (
     <>
-      <button className="mint-button" onClick={MintNow}>
-        Mint Now
+      <button
+        disabled={isMinting || !!transactionReceipt}
+        className="mint-button"
+        onClick={MintNow}
+      >
+        {isMinting ? "Minting..." : transactionReceipt ? "Mint" : "Mint"}
       </button>
     </>
   );
