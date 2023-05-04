@@ -1,6 +1,6 @@
 import React from "react";
 import "./welcome.css";
-import Mint from "./mint/Mint.js";
+import Mint from "./mint/mint.js";
 function Welcome() {
   return (
     <>

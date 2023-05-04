@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./mint.css";
-import { MintButton } from "./MintButton";
+import { MintButton } from "./mintButton";
 
 function Mint() {
   // const [launchText, setLaunchText] = useState("Launch Day-30 Nov 2022");
