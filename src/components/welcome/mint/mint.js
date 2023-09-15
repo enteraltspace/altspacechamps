@@ -19,7 +19,7 @@ function Mint() {
 
         <br />
         <h5 className="current-price-text">
-          Current Price = 81 MATIC
+          Current Price = FREE / Negligible
         </h5>
         <MintButton />
       </div>
